@@ -1,4 +1,3 @@
-//int ldr=0;
 
 int led1=13;
 int led2=12;
@@ -21,17 +20,14 @@ int led18=A3;
 int led19=A4;
 int led20=A5;
 
-;
-//const int intensitatea=ldr;
-int delay_1=(20);   //URCA SI COBOARA
-int delay_2=(10);   //ADUNA SI SCADE
-int delay_3=(160); // TOATE LEDURILE ON-OFF
-int delay_4=(50); //SIRENA POLITIE
+int delay_1=(20);   //increases and decreases
+int delay_2=(10);   //one by one
+int delay_3=(160); // all led ON-OFF
+int delay_4=(50); //police
 
 
 void setup() {
- // put your setup code here, to run once:
-//pinMode(ldr,INPUT);
+
 pinMode(led1,OUTPUT);
 pinMode(led2,OUTPUT);
 pinMode(led3,OUTPUT);
@@ -1027,7 +1023,7 @@ digitalWrite(led2,HIGH);
 digitalWrite(led1,HIGH);
 delay(delay_1);
 
-// stinge //////////////////////////////////////////////////
+// tunr off //////////////////////////////////////////////////
 
 digitalWrite(led20,LOW);
 digitalWrite(led19,HIGH);
@@ -1692,7 +1688,7 @@ digitalWrite(led1,HIGH);
 delay(delay_2);
 digitalWrite(led1,LOW);
 
-//KJH6HU7JYH676
+//----------------
 
 digitalWrite(led20,HIGH);
 digitalWrite(led19,HIGH);
@@ -1993,7 +1989,7 @@ digitalWrite(led2,LOW);
 digitalWrite(led1,LOW);
 delay(delay_3);
 
-//*** noul cod  --------------------------
+//*** one by one --------------------------
 
 digitalWrite(led20,HIGH);
 delay(delay_2);
@@ -2797,7 +2793,7 @@ digitalWrite(led4,HIGH);
 digitalWrite(led3,HIGH);
 digitalWrite(led2,HIGH);
 digitalWrite(led1,HIGH);
-   // INTOARCE*******************
+   // return   ************
 
 
 digitalWrite(led1,LOW);
@@ -3615,8 +3611,8 @@ digitalWrite(led19,LOW);
 digitalWrite(led20,LOW);
 
 
-/*
-// politie  ------------------------------------------
+
+//police ------------------------------------------
 
 digitalWrite(led1,HIGH);
 digitalWrite(led2,HIGH);
